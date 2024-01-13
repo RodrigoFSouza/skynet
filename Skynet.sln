@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet.Domain", "Skynet.Domain\Skynet.Domain.csproj", "{A6C8528E-B2E4-49A7-B91E-4AD61C8D9DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet.Application", "Skynet.Application\Skynet.Application.csproj", "{45E0E571-277F-4C2B-876A-88938D78E54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet.Infra.Data", "Skynet.Infra.Data\Skynet.Infra.Data.csproj", "{C49E80EA-2E25-43E5-8CEB-C8D319ADA390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet.Infra.Ioc", "Skynet.Infra.Ioc\Skynet.Infra.Ioc.csproj", "{AEBBEC34-3262-44BB-A8FE-ED3DDE2EE3EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet.WebUI", "Skynet.WebUI\Skynet.WebUI.csproj", "{408D7EDA-A6C9-4578-9607-BFA69DA45CA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6C8528E-B2E4-49A7-B91E-4AD61C8D9DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C8528E-B2E4-49A7-B91E-4AD61C8D9DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C8528E-B2E4-49A7-B91E-4AD61C8D9DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C8528E-B2E4-49A7-B91E-4AD61C8D9DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E0E571-277F-4C2B-876A-88938D78E54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E0E571-277F-4C2B-876A-88938D78E54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E0E571-277F-4C2B-876A-88938D78E54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E0E571-277F-4C2B-876A-88938D78E54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49E80EA-2E25-43E5-8CEB-C8D319ADA390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49E80EA-2E25-43E5-8CEB-C8D319ADA390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49E80EA-2E25-43E5-8CEB-C8D319ADA390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49E80EA-2E25-43E5-8CEB-C8D319ADA390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEBBEC34-3262-44BB-A8FE-ED3DDE2EE3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEBBEC34-3262-44BB-A8FE-ED3DDE2EE3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEBBEC34-3262-44BB-A8FE-ED3DDE2EE3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEBBEC34-3262-44BB-A8FE-ED3DDE2EE3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408D7EDA-A6C9-4578-9607-BFA69DA45CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408D7EDA-A6C9-4578-9607-BFA69DA45CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408D7EDA-A6C9-4578-9607-BFA69DA45CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408D7EDA-A6C9-4578-9607-BFA69DA45CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBB947A6-84C9-49AD-BB34-E7D0AEE6DC9B}
+	EndGlobalSection
+EndGlobal
