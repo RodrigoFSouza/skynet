@@ -1,15 +1,9 @@
 ﻿using Skynet.Domain.Validation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Skynet.Domain.Entities
 {
-    public sealed class Product
+    public sealed class Product : Entity
     {
-        public int Id { get; private set; }
         public string Name { get; private set; }
         public string Description { get; private set; }
 
@@ -18,6 +12,25 @@ namespace Skynet.Domain.Entities
         public string Image { get; private set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+
+        public Product(string name, string description, double preco, int stoke, string image)
+        {
+            ValidationDomain(name, description, preco, stoke, image);
+        }
+
+        public Product(int id, string name, string description, double preco, int stoke, string image)
+        {
+            DomainValidationException.When(id < 0, "Invalid id value");
+            Id = id;
+            ValidationDomain(name, description, preco, stoke, image);
+        }
+
+        public void Update(string name, string description, double preco, int stoke, string image, int categoryId)
+        {
+            ValidationDomain(name, description, preco, stoke, image);
+            CategoryId = categoryId;
+        }
+
 
         private void ValidationDomain(string name, string description, double price, int stoke, string image) 
         {
