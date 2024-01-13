@@ -16,6 +16,7 @@ namespace Skynet.Domain.Entities
         public Category(int id, string name)
         {
             DomainValidationException.When(id < 0, "Invalid Id value");
+            ValidationDomain(name);
             Id = id;
             Name = name;
         }

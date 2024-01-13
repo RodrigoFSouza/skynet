@@ -36,6 +36,7 @@ namespace Skynet.Domain.Entities
         {
             DomainValidationException.When(string.IsNullOrEmpty(name), "Invalid name. Name is required");
             DomainValidationException.When(name.Length < 3, "Invalid name, to short, minimum 3 characters");
+            DomainValidationException.When(name.Length > 120, "Invalid name, to large, maximum 120 characters");
 
             DomainValidationException.When(string.IsNullOrEmpty(description), "Invalid description. Description is required");
             DomainValidationException.When(description.Length < 5, "Invalid description, to short, minimum 3 characters");
@@ -44,7 +45,7 @@ namespace Skynet.Domain.Entities
 
             DomainValidationException.When(stoke < 0, "Invalid stoke value");
 
-            DomainValidationException.When(image.Length > 250, "Invalid image name, too long, maximum 250 characters");
+            DomainValidationException.When(image?.Length > 250, "Invalid image name, too long, maximum 250 characters");
 
             Name = name;
             Description = description; 
